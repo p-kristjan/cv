@@ -1,0 +1,181 @@
+:root {
+    --color1: #0B0C10;
+    --color2: #1F2833;
+    --color3: #C5C6C7;
+    --color4: #69a3ae;
+    --color5: #45A29E;
+    --color6: #707C80;
+    --color7: #FFFFFF;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.top-container{
+    background-color: var(--color2);
+    width: 100%;
+    height: 550px;
+}
+
+.cloud-wrapper{
+    position: relative;
+    width: 700px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+h1{
+    color: var(--color4);
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    color: var(--color5);
+    font-style: italic;
+}
+
+p{
+    color: var(--color6);
+}
+
+
+.mountain1{
+    position: absolute;
+    bottom: 0%;
+    left: 7%;
+}
+
+.cloud1{
+    position: absolute;
+    left: 48%;
+    top: 5%;
+    animation-name: cloud_move1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2{
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    animation-name: cloud_move2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.cloud3{
+    position: absolute;
+    left: 70%;
+    top: 35%;
+    animation-name: cloud_move3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes cloud_move1{
+    0% {left: 46%}
+    50% {left: 50%}
+    100% {left: 46%}
+}
+
+@keyframes cloud_move2{
+    0% {left: 7%}
+    50% {left: 3%}
+    100% {left: 7%}
+}
+
+@keyframes cloud_move3{
+    0% {left: 70%}
+    50% {left: 74%}
+    100% {left: 70%}
+}
+
+.title1{
+    padding-top: 17%;
+}
+
+.text1{
+    color: var(--color3);
+    text-align: center;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.middle-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.waving1{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.title2{
+    padding-top: 100px;
+}
+
+.skills-image1{
+    width: 100px;
+    float: left;
+    margin-right: 2rem;
+}
+
+.skills-image2{
+    width: 100px;
+    float: right;
+    margin-left: 2rem;
+}
+
+.skills-row{
+    margin-top: 50px;
+    text-align: left;
+}
+
+.skills-row p {
+    margin-top: -10px;
+}
+
+.btn {
+    color: var(--color6);
+    padding: 10px 20px 10px 20px;
+    border: solid var(--color5) 2px;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background: var(--color5);
+    color: var(--color7);
+    text-decoration: none;
+}
+
+.bottom-container{
+    background-color: var(--color2);
+    height: 60px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.copyright{
+    color: var(--color3);
+}
+
+.footer-link{
+    color: var(--color4);
+    text-decoration: none;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
